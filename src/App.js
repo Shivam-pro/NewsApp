@@ -5,7 +5,7 @@ import Newscontent from './component/Newscontent';
 
 function App() {
 
-  const API_KEY = process.env.API_KEY;
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const [Search, setSearch] = useState("india");
   const [Newsdata, setNewsdata] = useState(null);
   
