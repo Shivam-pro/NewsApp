@@ -15,6 +15,8 @@ function Newscontent({ data }) {
               description={news.description}
               imgurl={news.urlToImage}
               url={news.url}
+              author={news.author}
+              date={news.publishedAt}
             />
           ))
         ) : (
