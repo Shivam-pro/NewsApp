@@ -14,7 +14,7 @@ function App() {
 
   const fetchData = async () => {
     setProgress(10)
-    const response = await fetch(`https://newsapi.org/v2/everything?q=${Search}&apiKey=facf57ba0f254513942a965f5fe33709&page=${page}&pageSize=20`);
+    const response = await fetch(`https://newsapi.org/v2/everything?q=${Search}&apiKey=${API_KEY}&page=${page}&pageSize=20`);
     setProgress(30)
     const news = await response.json();
     setProgress(100)
