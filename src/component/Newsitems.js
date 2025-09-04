@@ -10,7 +10,7 @@ function Newsitems({ title, description, imgurl, url, author, date }) {
         <div className="card-body">
           <h5 className="card-title custom-scrollbar">{title}</h5>
           <p className="card-text custom-scrollbar">{description}</p>
-          <p class="text"><small class="text-body-secondary">by {!author ? "unkown":author} on {new Date(date).toGMTString()}</small></p>
+          <p className="text"><small className="text-body-secondary">by {!author ? "unkown":author} on {new Date(date).toGMTString()}</small></p>
           <a href={url} className="btn btn-primary">Read More</a>
         </div>
       </div>
